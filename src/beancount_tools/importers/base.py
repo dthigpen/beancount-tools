@@ -9,7 +9,7 @@ import hashlib
 from beangulp import extract, similar
 
 
-class Importer(csvbase.Importer):
+class BaseImporter(csvbase.Importer):
     def __init__(
         self,
         *args,

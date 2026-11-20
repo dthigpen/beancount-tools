@@ -3,7 +3,7 @@ from collections import defaultdict, Counter
 from beancount.core.data import Transaction, Posting
 
 
-class SimplePostingPRedictor:
+class SimplePostingPredictor:
     def __init__(self, debug=False):
         # (normalized narration, existing_account) -> Counter(missing_account)
         self.model = defaultdict(Counter)
